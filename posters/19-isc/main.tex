@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{relsize}	       % For \smaller
 \usepackage{url}			       % For \url
+\usepackage{hyperref}
 \usepackage{multicol}        % Multi Columns
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{todonotes}
@@ -74,11 +75,11 @@
 
   \vspace*{0.5em}
 
-  Julian Kunkel$^1$, Kai Himstedt$^2$, Weronika Filinger$^3$, Jean-Thomas Acquaviva$^4$, William Jalby$^5$, Lev Lafayette$^6$, \\[-0em] Anja Gerbes$^7$, Waseem Kamleh$^8$, Sharan Kalwan$^9$
+  Julian Kunkel$^1$, Kai Himstedt$^2$, Weronika Filinger$^3$, Jean-Thomas Acquaviva$^4$, \\[-0em] Lev Lafayette$^5$, Anja Gerbes$^6$, Waseem Kamleh$^7$, Sharan Kalwan$^8$
 
   \vspace*{-0.25em}
 
-  {\scriptsize $^1$:University of Reading, $^2$:Universität Hamburg, $^3$:EPCC, $^4$:DDN, $^5$:Université de Versailles Saint-Quentin, $^6$:University of Melbourne, $^7$:University of Frankfurt, $^8$:University of Adelaide, $^9$:DataSwing}
+  {\scriptsize $^1$:University of Reading, $^2$:Universität Hamburg, $^3$:EPCC, $^4$:DDN, $^5$:University of Melbourne, $^6$:University of Frankfurt, $^7$:University of Adelaide, $^8$:DataSwing}
 
   \vspace*{-0.5em}
 }
@@ -253,14 +254,14 @@ Since the certification program itself curates the curriculum but does not provi
 
 \headerbox{Status}{name=next,column=2,below=pecoh}{
 
-PeCoH contributed a concept paper, skill-tree, and a Javascript visualization to the effort.
-
-Technically, skills are stored in an XML document and can be processed via XSLT into various representations; they are also available as Markdown.
-
-The Javascripts can be re-used and configured by anyone -- e.g., for linking teaching material.
-
-We established a set of rules with the members of the forum and voted for the members of the steering board.
-
+  \begin{itemize}
+  \setlength\itemsep{-0.3em}
+  \item A first skill-tree is created (we work on ADM/BDA trees)
+  \item Skills are stored in an XML document and can be processed via XSLT into various representations; they are also available as Markdown.
+  \item A flexible viewer has been created with Javascript; it can be re-used and configured -- e.g., to highlight domain-relevant skills or linking teaching material.
+  \item We established a set of rules of the forum and held a vote for the first steering board.
+  \item A prototype for a first online examination is developed and evaluated.
+  \end{itemize}
 
 \smallskip
 
@@ -311,7 +312,7 @@ It is \textbf{not} its duty to interfere with content! We aim to preserve the te
 \scriptsize
 The PeCoH project is supported by the German Research Foundation (DFG) under grants LU 1353/12-1, OL 241/2-1, and RI 1068/7-1.
 
-\todo[inline]{Maybe add logos here}
+%\todo[inline]{Maybe add logos here}
 }
 
 \end{poster}
