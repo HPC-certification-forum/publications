@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{relsize}	       % For \smaller
 \usepackage{url}			       % For \url
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{multicol}        % Multi Columns
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{todonotes}
@@ -132,8 +132,8 @@ The skill-handbook is available in various representations on the webpage and on
     \vspace*{-0.5em}
       \begin{itemize}
         \setlength\itemsep{-0.3em}
-      \item Increase motivation to participate
-      \item (Certificates are recognized in CV)
+      \item Increase motivation to participate:\\
+      Certificates are recognized in CV
       \item Validate knowledge via tests
       \item Browse of relevant competences
       \item Identify recommended and required skills
@@ -204,7 +204,7 @@ There are various levels of contribution
 \end{itemize}
 \vspace*{-0.4em}
 
-Simply visit our website \url{hpc-certification.org} and join the mailing lists!
+Visit our website \url{hpc-certification.org} and join the Slack and mailing lists!
 
 \bigskip
 
@@ -218,7 +218,7 @@ Note that anyone joining will be listed on the public webpage!
 \textbf{Meetings:}
 
 A general assembly of members will occur at least twice a year -- during ISC and SC.
-On a monthly basis, the program chair organizes a conference call, that shall be attended by the executive board but is open to members.
+On a monthly basis, the program chair organizes a conference call via Slack, that shall be attended by the executive board but is open to members.
 
 \medskip
 \textbf{Providing teaching material:}
@@ -226,27 +226,14 @@ On a monthly basis, the program chair organizes a conference call, that shall be
 Since the certification program itself curates the curriculum but does not provide teaching material, anyone is welcome to provide teaching material -- we support branding of the material!
 }
 
-\headerbox{The PeCoH Project}{name=pecoh,column=2}{
-	The Performance Conscious HPC (PeCoH) project* aimed to create a lightweight HPC certification program. During the first year, it became apparent to broaden the scope and form an independent governance entity to sustain the effort and gain acceptance. Project information:
-    \begin{itemize}%[noitemsep,nolistsep]
-    \item DFG funded (runtime: 2017-2019)
-    \item Partners
-    	\vspace*{-0.5em}
-    	\begin{itemize}
-        \item Universität Hamburg (UHAM)
-        \item Regional computing center UHAM
-        \item Computer Center of Hamburg University of Technology (TUHH RZ)
-        \end{itemize}
-    \item Methods:
-    	\vspace*{-0.5em}
-    	\begin{itemize}
-        	\item Competence management
-            \item Cost-Awareness
-            \item Success stories
-            \item Explore benefit of new concepts
-		\end{itemize}
-    \end{itemize}
-	{\tiny *:\url{https://wr.informatik.uni-hamburg.de/research/projects/pecoh/} }
+\headerbox{Seeded by the PeCoH Project}{name=pecoh,column=2}{
+  The HPC Certification Program was seeded by the Performance Conscious HPC (PeCoH) project* which aimed to create a lightweight HPC certification program. During the first year, it became apparent to broaden the scope and form an independent governance entity to sustain the effort and gain acceptance.
+
+  Please see the PeCoH poster nearby!
+
+  {\tiny *:\url{https://wr.informatik.uni-hamburg.de/research/projects/pecoh/} \scriptsize \\
+  The PeCoH project is supported by the German ResearchFoundation (DFG) under grants LU 1353/12-1, OL 241/2-1, and RI 1068/7-1.
+  }
 }
 
 
@@ -254,16 +241,15 @@ Since the certification program itself curates the curriculum but does not provi
 
 \headerbox{Status}{name=next,column=2,below=pecoh}{
 
+\textbf{Organizational}
+\vspace*{-0.5em}
   \begin{itemize}
   \setlength\itemsep{-0.3em}
-  \item A first skill-tree is created (we work on ADM/BDA trees)
-  \item Skills are stored in an XML document and can be processed via XSLT into various representations; they are also available as Markdown.
-  \item A flexible viewer has been created with Javascript; it can be re-used and configured -- e.g., to highlight domain-relevant skills or linking teaching material.
-  \item We established a set of rules of the forum and held a vote for the first steering board.
-  \item A prototype for a first online examination is developed and evaluated.
+  \item First, an initial mode of operation for the board was defined and a steering board was voted.
+  \item Then, we developed a vision in the board.
+  \item Now, management structures and rules are established.
   \end{itemize}
 
-\smallskip
 
 \textbf{Responsibilities of the governance body}:
 \vspace*{-0.5em}
@@ -285,7 +271,25 @@ Since the certification program itself curates the curriculum but does not provi
     %\end{itemize}
   \end{itemize}
   \vspace*{-0.5em}
-It is \textbf{not} its duty to interfere with content! We aim to preserve the teaching ecosystem.
+It is \textbf{not} its duty to interfere with content! \\
+We aim to preserve the teaching ecosystem.
+
+\medskip
+
+\textbf{Technical}
+\vspace*{-0.5em}
+  \begin{itemize}
+  \setlength\itemsep{-0.3em}
+  \item The skill-tree in version 0.5 is available.
+  \item Skills are managed in Markdown and an XML document that is processed via XSLT into various representations.
+  \item A flexible viewer has been created with Javascript; it can be re-used and configured -- e.g., to highlight domain-relevant skills or linking teaching material.
+  \item A prototype for a first online examination is developed and currently evaluated.
+  \item Rules for the contribution of exam questions were established, this is the only non-open artifact under proprietary license.
+  \end{itemize}
+
+\textbf{Example certificate:}
+
+\includegraphics[width=0.87\textwidth]{jane-doe.pdf}
 }
 
 \headerbox{Next Steps}{name=nextSteps,column=2,below=next}{
@@ -306,13 +310,6 @@ It is \textbf{not} its duty to interfere with content! We aim to preserve the te
 
 
 %The meeting takes place on \textbf{TODO fill final slot here}.
-}
-
-\headerbox{Acknowledgements}{name=box32,column=2,below=nextSteps,above=bottom}{
-\scriptsize
-The PeCoH project is supported by the German Research Foundation (DFG) under grants LU 1353/12-1, OL 241/2-1, and RI 1068/7-1.
-
-%\todo[inline]{Maybe add logos here}
 }
 
 \end{poster}
